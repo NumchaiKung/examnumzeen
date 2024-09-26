@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HIV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress">ข้อ <span id="current-question">1</span> จาก 10</div>
+        <div id="question-container">
+            <h2 id="question">Question Text</h2>
+            <div id="choices">
+                <button class="choice" onclick="selectAnswer(0)">Choice 1</button>
+                <button class="choice" onclick="selectAnswer(1)">Choice 2</button>
+                <button class="choice" onclick="selectAnswer(2)">Choice 3</button>
+                <button class="choice" onclick="selectAnswer(3)">Choice 4</button>
+            </div>
+            <div id="explanation"></div>
+        </div>
+        <div id="timer">เหลือเวลา: <span id="time">30</span> วินาที</div>
+        <div id="score">คะแนน: <span id="current-score">0</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
